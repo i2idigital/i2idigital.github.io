@@ -1,0 +1,352 @@
+<div #sketch style="position: absolute; bottom: 15vh">
+</div>
+
+<div class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
+
+  <div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+    <nav class="uk-navbar-container" uk-navbar="dropbar: true">
+      <div class="uk-container">
+        <div uk-navbar>
+          <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+              <li>
+                <button class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" href uk-navbar-toggle-icon></button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="uk-visible@m"
+    uk-sticky="start: 50vh; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; end: ! *;">
+    <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse="sel-active: .uk-navbar-transparent">
+      <div class="uk-container">
+        <div
+          uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
+
+          <div class="uk-navbar-left">
+
+            <ul class="uk-navbar-nav">
+
+              <li class="uk-active"><a href="#"><span>I2I Digital</span></a></li>
+              <li><a href="#artists"><span>Artists</span></a></li>
+              <li>
+                <a href="#latest"><span>Latest</span></a>
+                <div class="uk-navbar-dropdown">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Active</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-header">Header</li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li class="uk-nav-divider"></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#services"><span>Services</span></a>
+                <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
+                  <div class="uk-drop-grid uk-child-width-1-2" uk-grid>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="uk-nav uk-navbar-dropdown-nav">
+                        <li class="uk-active"><a href="#">Active</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item</a></li>
+                        <li><a href="#">Item</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div
+    style="position: relative; height: calc(85vh - 80px); display: flex; flex-direction: column; justify-content: center;"
+    class="uk-light uk-container">
+    <!-- <img width="200px" src="../../assets/logo.gif" /> -->
+    <h1 style="margin: 0" class="uk-heading-medium uk-text-bold">i2i digital</h1>
+    <p style="margin: 0" class="uk-heading-small uk-text-light">Kickstarting artists in the digital age</p>
+  </div>
+
+  <div class="scroll">
+    <div class="m-scroll">
+      <span style="rbackground: cyan;">{{ newsMessage }}</span>
+      <span style="rbackground: magenta;">{{ newsMessage }}</span>
+      <span style="rbackground: yellow;">{{ newsMessage }}</span>
+      <span style="rbackground: gray;">{{ newsMessage }}</span>
+    </div>
+  </div>
+
+  <div id="artists" class="uk-dark uk-section">
+    <div class="uk-container">
+
+      <div class="uk-child-width-1-4@m" uk-grid="parallax: 0; parallax-justify: true; masonry: pack">
+
+
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/a9a877033d54454c8cedf9792919f033~c5_750x750.image">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Eric Reprid</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://img.buzzfeed.com/buzzfeed-static/complex/images/vfbt96shgzrn8zcoyriy/lil-tecca-press1.jpg">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Lil Tecca</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://img.buzzfeed.com/buzzfeed-static/images/ZmxfbG9zc3kscV9hdXRv/sn4p6xilfxil2bghsmz2/ski-mask-the-slump-god-press-durogene.jpeg.jpeg?downsize=900:*&output-format=auto&output-quality=auto">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Ski Mask The Slump God</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://img.buzzfeed.com/buzzfeed-static/images/ZmxfbG9zc3kscV9hdXRv/sn4p6xilfxil2bghsmz2/ski-mask-the-slump-god-press-durogene.jpeg.jpeg?downsize=900:*&output-format=auto&output-quality=auto">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Ski Mask The Slump God</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://img.buzzfeed.com/buzzfeed-static/images/ZmxfbG9zc3kscV9hdXRv/sn4p6xilfxil2bghsmz2/ski-mask-the-slump-god-press-durogene.jpeg.jpeg?downsize=900:*&output-format=auto&output-quality=auto">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Ski Mask The Slump God</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="https://img.buzzfeed.com/buzzfeed-static/images/ZmxfbG9zc3kscV9hdXRv/sn4p6xilfxil2bghsmz2/ski-mask-the-slump-god-press-durogene.jpeg.jpeg?downsize=900:*&output-format=auto&output-quality=auto">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Ski Mask The Slump God</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="latest" class="uk-section-muted uk-section uk-light brand-bg-black">
+    <div class="uk-container">
+
+      <ul uk-tab>
+        <li><a href="#">Eric Reprid</a></li>
+        <li><a href="#">Khantrast</a></li>
+        <li><a href="#">YEAT</a></li>
+      </ul>
+
+      <div class="uk-switcher uk-margin">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+          <div class="uk-cover-container uk-height-medium">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/dlVczLUfhI4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
+              width="1920" height="1080" allowfullscreen uk-responsive uk-video="automute: true" uk-cover></iframe>
+          </div>
+          <div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Cold World - Eric Reprid</h3>
+              <dl class="uk-description-list">
+                <dt>Description term</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</dd>
+                <dt>Description term</dt>
+                <dd>Lorem ipsum dolor sit amet</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <div>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed
+          do eiusmod.</div>
+      </div>
+
+
+      <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="collaborators" class="uk-section uk-light">
+    <div class="uk-container">
+
+      <div style="display: flex; align-items: center;" class="uk-height-match uk-child-width-expand@s" uk-grid>
+        <div uk-tooltip="Republic Records">
+          <img src="https://www.republicrecords.com/files/2022/11/republic-records.png" />
+        </div>
+        <div uk-tooltip="88rising">
+          <img src="https://hitcfestival.com/wp-content/uploads/2024/05/1200px-88rising_logo.svg.png" />
+        </div>
+        <div uk-tooltip="Transparent Arts">
+          <img src="https://transparentarts.com/wp-content/uploads/2018/06/TA_logo2_smwhite2.png" />
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-card-body">Item</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="services" class="uk-section uk-light brand-bg-black">
+    <div class="uk-container">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="uk-section brand-bg-blue">
+  <div class="uk-container uk-light">
+    <div class="uk-child-width-expand" uk-grid>
+      <div>
+        <ul class="uk-list">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+        <hr class="uk-divider-small">
+        <p class="uk-text-muted">Copyright 2024 &copy; I2I DIGITAL<br>In collaboration with <a
+            href="https://tehp.xyz">tehp.xyz</a></p>
+      </div>
+      <div class="uk-text-right">
+        <img width="200px" src="../../assets/logo.png" />
+        <!-- <h1 class="uk-heading-xlarge uk-text-bolder">i2i</h1> -->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true; flip: true; mode: slide">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav uk-nav-default">
+      <li class="uk-active"><a href="#">Active</a></li>
+      <li class="uk-parent">
+        <a href="#">Parent</a>
+        <ul class="uk-nav-sub">
+          <li><a href="#">Sub item</a></li>
+          <li><a href="#">Sub item</a></li>
+        </ul>
+      </li>
+      <li class="uk-nav-header">Header</li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: table"></span> Item</a></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Item</a></li>
+      <li class="uk-nav-divider"></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: trash"></span> Item</a></li>
+    </ul>
+  </div>
+</div>
