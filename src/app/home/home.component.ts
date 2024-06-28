@@ -2,16 +2,6 @@ import p5, { Camera } from 'p5';
 import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-interface Color {
-  r: number;
-  g: number;
-  b: number;
-}
-
-const lineColors: Color[] = [
-  { r: 90, g: 95, b: 207 }, // brand blue
-];
-
 var cols: number, rows: number;
 var triangleScale = 60;
 
@@ -20,6 +10,7 @@ var flying = 0;
 var terrain: Array<Array<number>> = [];
 
 const WIDTH_COEF = 2
+const HEIGHT_COEF = 2
 
 const sketch = (p: p5) => {
   p.preload = () => {
@@ -36,6 +27,7 @@ const sketch = (p: p5) => {
         terrain[x][y] = 0;
       }
     }
+    p.fill(90, 95, 207, 200);
   };
 
   p.windowResized = () => {
@@ -58,15 +50,8 @@ const sketch = (p: p5) => {
     p.background(0, 0);
     p.translate(0, 520);
     p.rotateX(p.PI / 2.3);
-    var locX = p.mouseX - p.windowHeight / 2;
-    var locY = p.mouseY - p.windowWidth / 2;
-    const HEIGHT_COEF = 2
-    p.fill(255, 200, 200, 200);
-    p.ambientLight(200, 200, 200);
-    p.pointLight(222, 33, 33, locX, locY, 150);
+    p.ambientLight(230, 230, 230);
     p.translate(-p.windowWidth / 2 * WIDTH_COEF, -p.windowHeight / 2);
-    // p.ambientMaterial(32, 37, 81);
-    // p.specularMaterial(100, 100, 255, 222);
 
     for (var y = 0; y < rows - 1; y++) {
       p.beginShape(p.TRIANGLE_STRIP);
