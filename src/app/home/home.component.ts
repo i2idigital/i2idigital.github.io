@@ -1,6 +1,16 @@
 import p5, { Camera } from 'p5';
 import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import Typed from 'typed.js';
+
+const options = {
+  strings: ['Innovation.', 'Discovery.'],
+  typeSpeed: 100,
+  backSpeed: 100,
+  showCursor: true,
+  cursorChar: '|',
+  loop: true
+};
 
 var cols: number, rows: number;
 var triangleScale = 60;
@@ -50,7 +60,7 @@ const sketch = (p: p5) => {
     p.background(0, 0);
     p.translate(0, 520);
     p.rotateX(p.PI / 2.3);
-    p.ambientLight(230, 230, 230);
+    p.ambientLight(80, 80, 80);
     p.translate(-p.windowWidth / 2 * WIDTH_COEF, -p.windowHeight / 2);
 
     for (var y = 0; y < rows - 1; y++) {
@@ -78,11 +88,33 @@ export class HomeComponent {
   p5?: p5;
   @ViewChild('sketch') sketch?: ElementRef;
 
-  newsMessage = "2024/06/15: Lil Tecca - \"500lbs\"";
+  newsSeparator = '  /  '
+  newsMessages = [
+    "July 2024: Lil Tecca - 500lbs",
+    "July 2024: YEAT - If We Being Rëal",
+    "July 2024: Ski Mask The Slump God - Shibuya",
+    "July 2024: Headband Andy - bangbychest!",
+    "July 2024: Eric Reprid - Cold World",
+    "July 2024: Luke Chiang - Never Tell",
+  ]
+  newsMessage = this.newsMessages.join(this.newsSeparator).concat(this.newsSeparator);
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    new Typed(".typed-element", {
+      strings: [
+        "new video game project",
+        "heavy metal album",
+        "sisters TikTok page",
+        "studios new campaign",
+        "favorite artists."
+
+      ],
+      smartBackspace: true,
+      typeSpeed: 30
+    });
+  }
 
   ngAfterViewInit() {
     if (this.sketch) {

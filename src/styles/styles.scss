@@ -1,9 +1,20 @@
  /* Custom SCSS/SASS Files */
 
  @font-face {
-   font-family: AkiraExpanded;
-   src: url("../assets/Akira\ Expanded.otf") format("opentype");
+   font-family: AkiraBold;
+   src: url("../assets/fonts/akira_bold-webfont.woff") format("woff");
  }
+
+ @font-face {
+   font-family: AkiraSuperBold;
+   src: url("../assets/fonts/akira_super_bold-webfont.woff") format("woff");
+ }
+
+ @font-face {
+   font-family: AkiraOutline;
+   src: url("../assets/fonts/akira_outline-webfont.woff") format("woff");
+ }
+
 
  @import "../styles/variables";
 

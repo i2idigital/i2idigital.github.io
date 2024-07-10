@@ -1,51 +1,39 @@
-<div #sketch style="position: absolute; bottom: 15%">
+<div #sketch style="position: absolute; bottom: 0%" class="brand-bg-black">
 </div>
 
 <div class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
 
-  <div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-    <nav class="uk-navbar-container" uk-navbar="dropbar: true">
-      <div class="uk-container">
-        <div uk-navbar>
-          <div class="uk-navbar-left">
-            <ul class="uk-navbar-nav">
-              <li>
-                <button class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" href uk-navbar-toggle-icon></button>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
+  <!-- <div class="uk-hidden@m" uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky"> -->
+  <!--   <nav class="uk-navbar-container" uk-navbar="dropbar: true"> -->
+  <!--     <div class="uk-container"> -->
+  <!--       <div uk-navbar> -->
+  <!--         <div class="uk-navbar-center"> -->
+  <!--           <ul class="uk-navbar-nav"> -->
+  <!--             <li> -->
+  <!--               <button class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav" href uk-navbar-toggle-icon></button> -->
+  <!--             </li> -->
+  <!--           </ul> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </nav> -->
+  <!-- </div> -->
 
-  <div class="uk-visible@m"
+  <div
     uk-sticky="start: 50vh; animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent; end: ! *;">
     <nav class="uk-navbar-container uk-navbar-transparent" uk-inverse="sel-active: .uk-navbar-transparent">
       <div class="uk-container">
         <div
           uk-navbar="dropbar: true; dropbar-transparent-mode: remove; dropbar-anchor: !.uk-navbar-container; target-y: !.uk-navbar-container">
-
-          <div class="uk-navbar-left">
+          <div class="uk-navbar-center">
 
             <ul class="uk-navbar-nav">
 
-              <li class="uk-active"><a href="#"><span>I2I Digital</span></a></li>
+
               <li><a href="#artists"><span>Artists</span></a></li>
-              <li>
-                <a href="#latest"><span>Latest</span></a>
-                <div class="uk-navbar-dropdown">
-                  <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="#">Active</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-header">Header</li>
-                    <li><a href="#">Item</a></li>
-                    <li><a href="#">Item</a></li>
-                    <li class="uk-nav-divider"></li>
-                    <li><a href="#">Item</a></li>
-                  </ul>
-                </div>
-              </li>
+
+              <li class="uk-active"><a href="#"><span>I2I Digital</span></a></li>
+
               <li>
                 <a href="#services"><span>Services</span></a>
                 <div class="uk-navbar-dropdown uk-navbar-dropdown-width-2">
@@ -75,6 +63,7 @@
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
         </div>
@@ -83,11 +72,16 @@
   </div>
 
   <div
-    style="position: relative; height: calc(85vh - 80px); display: flex; flex-direction: column; justify-content: center;"
-    class="uk-light uk-container">
-    <!-- <img width="200px" src="assets/logo.gif" /> -->
-    <h1 style="margin: 0" class="uk-heading-medium uk-text-bold">i2i digital</h1>
-    <p style="margin: 0" class="uk-heading-small uk-text-light">Kickstarting artists in the digital age</p>
+    style="position: relative; height: calc(100vh - 80px); display: flex; flex-direction: column; justify-content: center;"
+    class="uk-light uk-container uk-text-center">
+    <img class="uk-align-center" style="height: 20vh" src="assets/logo.gif" />
+    <h1 style="margin: 0" class="uk-heading-medium uk-text-bold outline">i2i digital</h1>
+    <p class="uk-heading-small uk-text-light" style="margin:0; margin-bottom: 20px">helping break your <span
+        class="typed-element">favorite artists</span>
+    </p>
+
+    <a href="#artists" style="margin-bottom: 200px; align-self: center;"
+      class="uk-button uk-button-default uk-button-medium brand-blue">ENTER</a>
   </div>
 
   <div class="scroll">
@@ -99,20 +93,18 @@
     </div>
   </div>
 
-  <div id="artists" class="uk-dark uk-section">
+  <div id="artists" class="uk-dark uk-section brand-bg-black">
     <div class="uk-container">
-
+      <h1 class="brand-blue uk-text-center" style="margin-top: 100px">Artists we work with</h1>
       <div class="uk-child-width-1-4@m" uk-grid="parallax: 0; parallax-justify: true; masonry: pack">
 
-
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img src="https://www.udiscovermusic.com/wp-content/uploads/2023/08/Yeat-Noah-Keckler-1.jpg">
             </div>
             <div class="uk-card-body">
-              <h3 class="uk-card-title">YEAT</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <h3 class="uk-card-title brand-blue">YEAT</h3>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -121,14 +113,13 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img
                 src="https://img.buzzfeed.com/buzzfeed-static/complex/images/vfbt96shgzrn8zcoyriy/lil-tecca-press1.jpg">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">Lil Tecca</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -137,14 +128,13 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img
                 src="https://img.buzzfeed.com/buzzfeed-static/images/ZmxfbG9zc3kscV9hdXRv/sn4p6xilfxil2bghsmz2/ski-mask-the-slump-god-press-durogene.jpeg.jpeg?downsize=900:*&output-format=auto&output-quality=auto">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">Ski Mask The Slump God</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -153,14 +143,13 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img
                 src="https://p16-tm-sg.tiktokmusic.me/img/tos-alisg-i-0000/a9a877033d54454c8cedf9792919f033~c5_750x750.image">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">Eric Reprid</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -169,14 +158,13 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img
                 src="https://yt3.googleusercontent.com/uZHRfG48WZjJQgEvyCPSOU0yAiSqNmCIUGQcF1VS-GmQL5VTXwhMu6_XbqZFDupz1eF9kunhZg=s900-c-k-c0x00ffffff-no-rj">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">Headband Andy</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -185,13 +173,12 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img src="assets/sam.png">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">S.A.M.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -200,13 +187,27 @@
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-default">
+          <div class="uk-card uk-card-default uk-text-center">
             <div class="uk-card-media-top">
               <img src="https://viberatecdn.blob.core.windows.net/entity/artist/zvch-891-tgznc">
             </div>
             <div class="uk-card-body">
               <h3 class="uk-card-title">zvch</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+              <a href="#" uk-icon="play-circle"></a>
+              <a href="#" uk-icon="instagram"></a>
+              <a href="#" uk-icon="tiktok"></a>
+              <a href="#" uk-icon="x"></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default uk-text-center">
+            <div class="uk-card-media-top">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5e387eca8235c42f2e4dbe6c/dc9f8624-f585-40b8-9ebc-436c90e1fc65/Luke-3.jpeg">
+            </div>
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Luke Chiang</h3>
               <a href="#" uk-icon="play-circle"></a>
               <a href="#" uk-icon="instagram"></a>
               <a href="#" uk-icon="tiktok"></a>
@@ -223,6 +224,8 @@
 
   <div id="latest" class="uk-section-muted uk-section uk-light brand-bg-black">
     <div class="uk-container">
+
+      <h1 class="brand-blue uk-text-center" style="margin-top: 100px">Featured Projects</h1>
 
       <ul uk-tab>
         <li><a href="#">Eric Reprid</a></li>
@@ -273,38 +276,38 @@
     </div>
   </div>
 
-  <div class="uk-section uk-light brand-bg-blue">
-    <div class="uk-container">
-      <div style="display: flex; align-items: center;" class="uk-height-match uk-child-width-expand@s uk-light" uk-grid>
-        <div>
-          <div uk-parallax="x: -100, 100">
-            <h2>Innovation</h2>
-            <p>Leveraging cutting-edge automation technology.</p>
-          </div>
-        </div>
-        <div>
-          <div uk-parallax="x: -100, 100">
-            <h2>Scalability</h2>
-            <p>Ability to manage multiple accounts effortlessly.</p>
-          </div>
-        </div>
-        <div>
-          <div uk-parallax="x: -100, 100">
-            <h2>Cost Savings</h2>
-            <p>Significantly lower costs compared to manual management.</p>
-          </div>
-        </div>
-        <div>
-          <div uk-parallax="x: -100, 100">
-            <h2>Expertise</h2>
-            <p>Deep understanding of TikTok's algorithm and trends.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- <div class="uk-section uk-light brand-bg-black"> -->
+  <!--   <div class="uk-container"> -->
+  <!--     <div style="display: flex; align-items: center;" class="uk-height-match uk-child-width-expand@s uk-light" uk-grid> -->
+  <!--       <div> -->
+  <!--         <div uk-parallax="x: -100, 100"> -->
+  <!--           <h2>Innovation</h2> -->
+  <!--           <p>Leveraging cutting-edge automation technology.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div> -->
+  <!--         <div uk-parallax="x: -100, 100"> -->
+  <!--           <h2>Scalability</h2> -->
+  <!--           <p>Ability to manage multiple accounts effortlessly.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div> -->
+  <!--         <div uk-parallax="x: -100, 100"> -->
+  <!--           <h2>Cost Savings</h2> -->
+  <!--           <p>Significantly lower costs compared to manual management.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--       <div> -->
+  <!--         <div uk-parallax="x: -100, 100"> -->
+  <!--           <h2>Expertise</h2> -->
+  <!--           <p>Deep understanding of TikTok's algorithm and trends.</p> -->
+  <!--         </div> -->
+  <!--       </div> -->
+  <!--     </div> -->
+  <!--   </div> -->
+  <!-- </div> -->
 
-  <div id="collaborators" class="uk-section uk-light">
+  <div id="collaborators" class="uk-section uk-light brand-bg-black">
     <div class="uk-container">
       <div style="display: flex; align-items: center;" class="uk-height-match uk-child-width-expand@s" uk-grid>
         <div uk-tooltip="Republic Records">
@@ -315,6 +318,9 @@
         </div>
         <div uk-tooltip="Transparent Arts">
           <img src="https://transparentarts.com/wp-content/uploads/2018/06/TA_logo2_smwhite2.png" />
+        </div>
+        <div uk-tooltip="RedBull Records">
+          <img src="https://upload.wikimedia.org/wikipedia/en/9/98/RedBullRecordsLogo_large_knockout.png" />
         </div>
         <div>
           <div class="uk-card uk-card-default uk-card-body">Item</div>
@@ -435,7 +441,7 @@
     </div>
   </div>
 
-  <div id="services" class="uk-section uk-light">
+  <div id="services" class="uk-section uk-light brand-bg-black">
     <div class="uk-container">
       <h1>About Us</h1>
       <p>i2i digital is a Vancouver-based music marketing company offering transparent and authentic solutions to help
@@ -459,8 +465,11 @@
           <li><a href="#">Twitter</a></li>
         </ul>
         <hr class="uk-divider-small">
-        <p class="uk-text-muted">Copyright 2024 &copy; I2I DIGITAL<br>In collaboration with <a
-            href="https://tehp.xyz">tehp.xyz</a></p>
+        <p class="uk-text-muted">Based in Vancouver Canada<br>In collaboration with
+          <a href="https://tehp.xyz">tehp.xyz</a>
+        </p>
+        <hr class="uk-divider-small">
+        <p style="font-size: 80%" class="uk-text-muted">Copyright 2024 &copy; I2I DIGITAL</p>
       </div>
       <div class="uk-text-right">
         <img width="200px" src="assets/logo_small.gif" />
