@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-back',
@@ -9,6 +10,12 @@ import { Component, Input } from '@angular/core';
 })
 export class NavBackComponent {
 
+  constructor(private router: Router) { }
+
   @Input() to?: string;
+
+  nav() {
+    this.router.navigate([this.to || ''])
+  }
 
 }
