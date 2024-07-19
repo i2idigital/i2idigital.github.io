@@ -1,24 +1,68 @@
- /* Custom SCSS/SASS Files */
+/* Custom SCSS/SASS Files */
 
- @font-face {
-   font-family: AkiraBold;
-   src: url("../assets/fonts/akira_bold-webfont.woff") format("woff");
- }
+@font-face {
+  font-family: AkiraBold;
+  src: url("../assets/fonts/akira_bold-webfont.woff") format("woff");
+}
 
- @font-face {
-   font-family: AkiraSuperBold;
-   src: url("../assets/fonts/akira_super_bold-webfont.woff") format("woff");
- }
+@font-face {
+  font-family: AkiraSuperBold;
+  src: url("../assets/fonts/akira_super_bold-webfont.woff") format("woff");
+}
 
- @font-face {
-   font-family: AkiraOutline;
-   src: url("../assets/fonts/akira_outline-webfont.woff") format("woff");
- }
+@font-face {
+  font-family: AkiraOutline;
+  src: url("../assets/fonts/akira_outline-webfont.woff") format("woff");
+}
 
 
- @import "../styles/variables";
+@import "../styles/variables";
 
- @import "uikit/src/scss/variables-theme.scss";
- @import "uikit/src/scss/mixins-theme.scss";
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
 
- @import "uikit/src/scss/uikit-theme.scss";
+@import "uikit/src/scss/uikit-theme.scss";
+
+.brand-bg-black {
+  background-color: $brand-black !important;
+}
+
+.brand-bg-blue {
+  background-color: $brand-blue !important;
+}
+
+.brand-blue {
+  color: $brand-blue !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+dd,
+dt,
+div,
+span {
+  font-family: AkiraBold;
+}
+
+.bold {
+  font-family: AkiraSuperBold;
+}
+
+.outline {
+  font-family: AkiraOutline;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
