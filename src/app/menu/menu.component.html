@@ -3,12 +3,23 @@
 
 <div class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
 
-  <div style="position: relative; height: calc(100vh); display: flex; flex-direction: column; justify-content: center;"
+  <div
+    style="position: relative; height: calc(100vh - 34px); display: flex; flex-direction: column; justify-content: center;"
     class="uk-light uk-container uk-text-center">
     <h1 style="margin: 0" class="uk-heading-medium uk-text-bold outline brand-blue">i2i digital</h1>
     <a routerLink="/artists" class="uk-heading-small uk-text-light"><span>Artists</span></a>
     <a routerLink="/services" class="uk-heading-small uk-text-light"><span>Services</span></a>
+    <a routerLink="/about" class="uk-heading-small uk-text-light"><span>About Us</span></a>
     <a routerLink="/contact" class="uk-heading-small uk-text-light"><span>Contact</span></a>
+  </div>
+
+  <div class="scroll">
+    <div class="m-scroll">
+      <span style="rbackground: cyan;">{{ newsMessage }}</span>
+      <span style="rbackground: magenta;">{{ newsMessage }}</span>
+      <span style="rbackground: yellow;">{{ newsMessage }}</span>
+      <span style="rbackground: gray;">{{ newsMessage }}</span>
+    </div>
   </div>
 
 </div>

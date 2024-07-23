@@ -1,5 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
-import p5, { Camera } from 'p5';
+import p5 from 'p5';
 
 var cols: number, rows: number;
 var triangleScale = 60;
@@ -47,7 +47,7 @@ const sketch = (p: p5) => {
     }
 
     p.background(0, 0);
-    p.translate(0, 520);
+    p.translate(0, p.windowHeight / 1.5);
     p.rotateX(p.PI / 2.3);
     p.ambientLight(80, 80, 80);
     p.translate(-p.windowWidth / 2 * WIDTH_COEF, -p.windowHeight / 2);
@@ -80,6 +80,10 @@ export class BackgroundComponent implements AfterViewInit {
     if (this.sketch) {
       this.p5 = new p5(sketch, this.sketch.nativeElement);
     }
+  }
+
+  ngOnDestroy() {
+    this.p5?.noLoop();
   }
 
 }

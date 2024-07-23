@@ -1,89 +1,22 @@
  @import 'variables';
 
-.scroll {
-  position: relative;
-  width: 100vw;
-  height: 34px;
-  background-color: #252525;
-  overflow: hidden;
-  z-index: 1;
-  margin: 0;
-  padding: 0;
-  background-color: $brand-blue;
-}
 
-.m-scroll {
-  overflow: hidden;
-  height: 100%;
-  white-space: nowrap;
-  animation: scrollText 50s infinite linear;
-  margin: 0;
-  font-size: 0;
-  display: inline-block;
-
-  span {
-    font-size: 20px;
-    display: inline-block;
-    min-width: 100vw;
-    margin: 0;
-    padding: 0;
-    color: white;
-  }
-}
-
-.uk-heading-small {
-  font-size: 1.5rem;
-}
+ .uk-heading-small {
+   font-size: 1.5rem;
+ }
 
 
-@keyframes scrollText {
-  from {
-    transform: translateX(0%);
-  }
+ #artists {
 
-  to {
-    transform: translateX(-50%);
-  }
-}
+   h3 {
+     color: $brand-blue;
+   }
 
-.uk-card-body {
-  padding: 20px;
+   a {
+     color: $brand-white
+   }
 
-  .uk-icon {
-    margin: 3px;
-  }
-}
-
-#artists {
-
-  h3 {
-    color: $brand-blue;
-  }
-
-  a {
-    color: $brand-white
-  }
-
-  .uk-card {
-    background-color: $brand-black;
-  }
-}
-
-.uk-card {
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $brand-blue;
-  }
-
-  p {
-    color: $brand-white;
-  }
-
-  background-color: $brand-black;
-}
-
+   .uk-card {
+     background-color: $brand-black;
+   }
+ }

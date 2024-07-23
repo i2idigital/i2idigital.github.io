@@ -1,0 +1,27 @@
+ @import 'variables';
+
+ .uk-card-body {
+   padding: 20px;
+
+   .uk-icon {
+     margin: 3px;
+   }
+ }
+
+ .uk-card {
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+     color: $brand-blue;
+   }
+
+   p {
+     color: $brand-white;
+   }
+
+   background-color: $brand-black;
+ }
