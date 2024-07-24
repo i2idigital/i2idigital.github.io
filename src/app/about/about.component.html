@@ -3,6 +3,7 @@
 
 <div class="uk-section-secondary uk-background-cover uk-preserve-color uk-inverse-light">
 
+
     <div style="position: relative; display: flex; flex-direction: column; justify-content: center;"
         class="uk-light uk-container uk-text-center">
         <div style="margin-top: 15vh" id="about" class="uk-section uk-light">
@@ -24,7 +25,38 @@
         </div>
     </div>
 
+    <div id="stats" class="uk-container uk-light" style="position: relative;">
+        <div style="display: flex;" class="uk-child-width-expand@s" uk-grid>
+            <div>
+                <h1 class="stat">500M+</h1>
+                <p class="caption">Streams</p>
+            </div>
+
+            <div>
+                <h1 class="stat">2B+</h1>
+                <p class="caption">Fans reached</p>
+            </div>
+
+            <div class="flag-container">
+                <img class="flag" [src]="'assets/flag.png'" />
+                <p class="caption">Canada based</p>
+            </div>
+
+            <div>
+                <h1 class="stat">$1.07</h1>
+                <p class="caption">Average CPM</p>
+            </div>
+
+
+            <div>
+                <h1 class="stat">5M+</h1>
+                <p class="caption">Follower network</p>
+            </div>
+        </div>
+    </div>
+
     <div id="collaborators" class="uk-container uk-light" style="position: relative;">
+        <h3 style="margin-top: 5vh; text-align: center;">We work with</h3>
         <div style="display: flex; align-items: center;" class="uk-height-match uk-child-width-expand@s" uk-grid>
             <div uk-tooltip="Republic Records">
                 <img src="https://www.republicrecords.com/files/2022/11/republic-records.png" />
@@ -36,39 +68,15 @@
                 <img src="https://transparentarts.com/wp-content/uploads/2018/06/TA_logo2_smwhite2.png" />
             </div>
             <div uk-tooltip="RedBull Records">
-                <img src="https://upload.wikimedia.org/wikipedia/en/9/98/RedBullRecordsLogo_large_knockout.png" />
+                <img [src]="'assets/brands/redbull.png'" />
             </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div uk-tooltip="Broke">
+                <img [src]="'assets/brands/broke.png'" />
             </div>
-            <div>
-                <div class="uk-card uk-card-default uk-card-body">Item</div>
+            <div uk-tooltip="TooLost">
+                <img [src]="'assets/brands/toolost.png'" />
             </div>
         </div>
     </div>
-
-    <!-- <div class="uk-section brand-bg-blue"> -->
-    <!--     <div class="uk-container uk-light"> -->
-    <!--         <div class="uk-child-width-expand" uk-grid> -->
-    <!--             <div> -->
-    <!--                 <ul class="uk-list"> -->
-    <!--                     <li><a href="#">Instagram</a></li> -->
-    <!--                     <li><a href="#">TikTok</a></li> -->
-    <!--                     <li><a href="#">Twitter</a></li> -->
-    <!--                 </ul> -->
-    <!--                 <hr class="uk-divider-small"> -->
-    <!--                 <p class="uk-text-muted">Based in Vancouver Canada<br>In collaboration with -->
-    <!--                     <a href="https://tehp.xyz">tehp.xyz</a> -->
-    <!--                 </p> -->
-    <!--                 <hr class="uk-divider-small"> -->
-    <!--                 <p style="font-size: 80%" class="uk-text-muted">Copyright 2024 &copy; I2I DIGITAL</p> -->
-    <!--             </div> -->
-    <!--             <div class="uk-text-right"> -->
-    <!--                 <img width="200px" src="assets/logo_small.gif" /> -->
-    <!--                 <!-- <h1 class="uk-heading-xlarge uk-text-bolder">i2i</h1> --> -->
-    <!--             </div> -->
-    <!--         </div> -->
-    <!--     </div> -->
-    <!-- </div> -->
 
 </div>

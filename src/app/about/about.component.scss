@@ -25,3 +25,26 @@
 
    background-color: $brand-black;
  }
+
+ .stat {
+   text-align: center;
+   margin-bottom: 0;
+   font-size: 2.5vw;
+ }
+
+ .caption {
+   text-align: center;
+   margin-top: 0;
+ }
+
+ .flag {
+   align-self: center;
+   max-height: 2.4vw;
+   margin-bottom: 0.3vw;
+   margin-top: 0.3vw;
+ }
+
+ .flag-container {
+   display: flex;
+   flex-direction: column;
+ }
