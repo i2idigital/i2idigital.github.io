@@ -20,11 +20,12 @@ export class HomeComponent {
   ngOnInit() {
     new Typed(".typed-element", {
       strings: [
-        "new video game project",
-        "heavy metal album",
-        "sisters TikTok page",
-        "studios new campaign",
-        "favorite artists."
+        "data-driven, results focused",
+        "as times change, we change with it",
+        "disruptive marketing for the digital age",
+        "full transparency",
+        "revolutionizing artist discovery",
+        "pioneering the music marketing landscape"
 
       ],
       smartBackspace: true,

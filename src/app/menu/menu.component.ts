@@ -12,14 +12,16 @@ import { RouterLink } from '@angular/router';
 })
 export class MenuComponent {
 
-  newsSeparator = '  /  '
+  newsSeparator = '     /     '
   newsMessages = [
-    "July 2024: Lil Tecca - 500lbs",
-    "July 2024: YEAT - If We Being Rëal",
-    "July 2024: Ski Mask The Slump God - Shibuya",
-    "July 2024: Headband Andy - bangbychest!",
-    "July 2024: Eric Reprid - Cold World",
-    "July 2024: Luke Chiang - Never Tell",
+    "Headband Andy - bangmychest!",
+    "Lil Tecca - 500lbs",
+    "Ski Mask The Slump God - Shibuya",
+    "Khantrast - I'm Toxic",
+    "YEAT - If We Being Rëal",
+    "Eric Reprid - Cold World",
+    "S.A.M - Where Ya Daughter At?",
+    "bbno$ - It Boy",
   ]
   newsMessage = this.newsMessages.join(this.newsSeparator).concat(this.newsSeparator);
 
