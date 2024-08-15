@@ -29,7 +29,7 @@
  .stat {
    text-align: center;
    margin-bottom: 0;
-   font-size: 2.5vw;
+   font-size: 2.5em;
  }
 
  .caption {
@@ -39,12 +39,16 @@
 
  .flag {
    align-self: center;
-   max-height: 2.4vw;
-   margin-bottom: 0.3vw;
-   margin-top: 0.3vw;
+   max-height: 2.4em;
+   margin-bottom: 0.3em;
+   margin-top: 0.3em;
  }
 
  .flag-container {
    display: flex;
    flex-direction: column;
+ }
+
+ .logos div {
+   padding: 20px;
  }
