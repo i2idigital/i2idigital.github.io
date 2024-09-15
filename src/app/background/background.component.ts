@@ -1,4 +1,5 @@
-import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { AfterViewInit, Component, ElementRef, HostListener, NgZone, ViewChild } from '@angular/core';
 import p5 from 'p5';
 
 var cols: number, rows: number;
@@ -68,7 +69,7 @@ const sketch = (p: p5) => {
 @Component({
   selector: 'app-background',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './background.component.html',
   styleUrl: './background.component.scss'
 })
@@ -76,14 +77,38 @@ export class BackgroundComponent implements AfterViewInit {
   p5?: p5;
   @ViewChild('sketch') sketch?: ElementRef;
 
+  constructor(private ngZone: NgZone) { }
+
+  top: any;
+  left: any;
+  expand = false;
+
   ngAfterViewInit() {
-    if (this.sketch) {
-      this.p5 = new p5(sketch, this.sketch.nativeElement);
-    }
+    this.ngZone.runOutsideAngular(() => {
+      if (this.sketch) {
+        this.p5 = new p5(sketch, this.sketch.nativeElement);
+      }
+    })
+  }
+
+  @HostListener('document:click', ['$event'])
+  onClick() {
+    this.expand = true;
+    setTimeout(() => {
+      this.expand = false;
+    }, 1500)
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  onMousemove($event: any) {
+    this.ngZone.runOutsideAngular(() => {
+      $event.preventDefault();
+      this.top = ($event.pageY - 10) + "px";
+      this.left = ($event.pageX - 10) + "px";
+    })
   }
 
   ngOnDestroy() {
     this.p5?.noLoop();
   }
-
 }
