@@ -65,6 +65,16 @@ html {
 
 * {
   cursor: url("../assets/cursor.png"), auto !important;
+
+  ::selection {
+    background: $brand-blue !important;
+    color: white !important;
+  }
+
+  ::-moz-selection {
+    background: $brand-blue !important;
+    color: white !important;
+  }
 }
 
 h1 {
