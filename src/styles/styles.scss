@@ -63,6 +63,10 @@ html {
   scroll-behavior: smooth;
 }
 
+* {
+  cursor: url("../assets/cursor.png"), auto !important;
+}
+
 h1 {
   margin-bottom: 50px;
 }

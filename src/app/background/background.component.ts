@@ -79,32 +79,11 @@ export class BackgroundComponent implements AfterViewInit {
 
   constructor(private ngZone: NgZone) { }
 
-  top: any;
-  left: any;
-  expand = false;
-
   ngAfterViewInit() {
     this.ngZone.runOutsideAngular(() => {
       if (this.sketch) {
         this.p5 = new p5(sketch, this.sketch.nativeElement);
       }
-    })
-  }
-
-  @HostListener('document:click', ['$event'])
-  onClick() {
-    this.expand = true;
-    setTimeout(() => {
-      this.expand = false;
-    }, 1500)
-  }
-
-  @HostListener('document:mousemove', ['$event'])
-  onMousemove($event: any) {
-    this.ngZone.runOutsideAngular(() => {
-      $event.preventDefault();
-      this.top = ($event.pageY - 10) + "px";
-      this.left = ($event.pageX - 10) + "px";
     })
   }
 
