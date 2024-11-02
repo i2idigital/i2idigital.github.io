@@ -1,0 +1,23 @@
+<div>
+    <div class="uk-card uk-text-center">
+        <div class="uk-card-media-top">
+            <a href="https://open.spotify.com/artist/{{ spotifyId }}" target=”_blank”><img [src]="imageUrl"></a>
+        </div>
+        <div class="uk-card-body">
+            <h3 class="uk-card-title">{{ name }}</h3>
+            <a href="https://open.spotify.com/artist/{{ spotifyId }}"><img class="spotify-icon"
+                    [src]="'assets/icons/spotify.webp'" /></a>
+            <ng-container *ngIf="ig">
+                <a href="https://www.instagram.com/{{ ig }}" uk-icon="instagram"></a>
+            </ng-container>
+            <ng-container *ngIf="tiktok">
+                <a href="https://www.tiktok.com/@{{ tiktok }}" uk-icon="tiktok"></a>
+            </ng-container>
+            <ng-container *ngIf="x">
+                <a href="https://x.com/{{ x }}" uk-icon="x"></a>
+            </ng-container>
+        </div>
+        <iframe [src]="embedUrl" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+</div>
