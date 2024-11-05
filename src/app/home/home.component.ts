@@ -29,7 +29,7 @@ export class HomeComponent {
 
       ],
       smartBackspace: true,
-      typeSpeed: 85
+      typeSpeed: 50
     });
   }
 }

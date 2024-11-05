@@ -1,1 +1,10 @@
+.uk-slidenav-next,
+.uk-slidenav-previous {
+  top: 140px;
+}
 
+::ng-deep {
+  polyline {
+    stroke-width: 3;
+  }
+}

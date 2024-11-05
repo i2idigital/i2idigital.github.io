@@ -49,8 +49,20 @@
    flex-direction: column;
  }
 
- .logos div {
+ .logos {
    padding: 0 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .logo-image {
+     display: flex;
+     min-height: 140px !important;
+
+     img {
+       object-fit: contain;
+     }
+   }
  }
 
  .uk-grid-margin {
