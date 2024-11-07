@@ -8,107 +8,39 @@
 
             <h1 class="brand-blue uk-text-center">Featured Campaigns</h1>
 
-            <ul uk-tab>
-                <li><a href="#">Cold world</a></li>
-                <li><a href="#">500lbs</a></li>
-                <li><a href="#">If we being Rëal</a></li>
-                <li><a href="#">bangmychest!</a></li>
+            <ul uk-tab class="uk-flex-center">
+                @for (campaign of campaigns; track campaign.artist) {
+                <li><a href="#">{{ campaign.song }}</a></li>
+                }
             </ul>
 
             <div class="uk-switcher uk-margin">
-                <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-cover-container uk-height-medium">
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/dlVczLUfhI4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                            width="1280" height="620" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">Cold World - Eric Reprid</h3>
-                            <dl class="uk-description-list">
-                                <dt class="brand-blue">Gaming Montage Campaign</dt>
-                                <dd>Spread across Fortnite, Valorant, Rocket League & more popular video-games, we were
-                                    able to take Cold World to the next level, turning it into an algorithm song within
-                                    the gaming community.</dd>
-                                <dt class="brand-blue">TikTok Influencer & Content Strategy Campaign</dt>
-                                <dd>Captured the attention of millions of people across TikTok, driving 1M streams
-                                    within the first week of release.</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-cover-container uk-height-medium">
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/vIBFoBladhg?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                            width="1280" height="620" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">500lbs - Lil Tecca</h3>
-                            <dl class="uk-description-list">
-                                <dt class="brand-blue">AMV Campaign</dt>
-                                <dd>Capitalizing on our prolific network of creators we manage across YT, IG, and
-                                    TikTok, we were able to generate over 5M views in the span of 5 months.</dd>
 
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-cover-container uk-height-medium">
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/1xcvWmN0Pe4?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                            width="1280" height="620" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
-                    </div>
-                    <div>
-                        <div class="uk-card-body">
-                            <h3 class="uk-card-title">If We Being Real - YEAT</h3>
-                            <dl class="uk-description-list">
-                                <dt class="brand-blue">Gaming Montage Campaign</dt>
-                                <dd>Over 2.5M views in just 2 months, utilizing our strong connections within the
-                                    Fortnite community to connect on YouTube long form and shorts content.</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
+                @for (campaign of campaigns; track campaign.artist) {
+                <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
 
-                <div class="uk-card uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div class="uk-cover-container uk-height-medium">
-                        <iframe
-                            src="https://www.youtube-nocookie.com/embed/yLVJfGePguw?autoplay=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playsinline=1"
-                            width="1280" height="620" allowfullscreen uk-responsive uk-video="automute: true"></iframe>
+                    <div class="uk-cover-container">
+                        <iframe [src]="campaign.youtubeId" width="1600" height="900" allowfullscreen uk-responsive
+                            uk-video="automute: true"></iframe>
                     </div>
-                    <div>
+
+                    <div class="campaign-content">
                         <div class="uk-card-body">
-                            <h3 class="uk-card-title">bangmychest! - Headband Andy</h3>
-                            <dl class="uk-description-list">
-                                <dt class="brand-blue">AMV Campaign</dt>
-                                <dd>Taking the AMV community by storm, bangmychest! took off in this space making waves
-                                    across the YouTube AMV algorithm as well as IG reels & short form content,
-                                    generating over 4M views in less than 3 months.</dd>
-                            </dl>
+                            <!-- <h2 class="uk-card-title">{{ campaign.artist }}</h2> -->
+                            <!-- <h2 class="brand-blue">{{ campaign.song }}</h2> -->
+                            <!-- <span> -->
+                            <!--     <a [href]="campaign.youtubeLink" uk-icon="youtube"></a> -->
+                            <!--     <a [href]="campaign.spotifyTrack"><img class="spotify-icon" -->
+                            <!--             [src]="'assets/icons/spotify.webp'" /></a> -->
+                            <!--     <a [href]="campaign.appleLink" uk-icon="apple"></a> -->
+                            <!-- </span> -->
                         </div>
                     </div>
+
+
                 </div>
+                }
             </div>
         </div>
     </div>
 </div>
-<!-- <div class="uk-height-match uk-child-width-expand@s uk-text-center" uk-grid> -->
-<!--     <div> -->
-<!--         <div class="uk-card uk-card-body"> -->
-<!--             <h4>$1.34 CPM</h4> -->
-<!--         </div> -->
-<!--     </div> -->
-<!--     <div> -->
-<!--         <div class="uk-card uk-card-body"> -->
-<!--             <h4>2.3M YouTube views in first week</h4> -->
-<!--         </div> -->
-<!--     </div> -->
-<!--     <div> -->
-<!--         <div class="uk-card uk-card-body"> -->
-<!--             <h4>+4.2k Followers in first week</h4> -->
-<!--         </div> -->
-<!--     </div> -->
-<!-- </div> -->
