@@ -6,6 +6,22 @@
 
         <h1 class="brand-blue uk-text-center">Services</h1>
 
+        @if(!showContent) {
+        <div class="uk-text-center">
+
+            <p>password</p>
+            <form>
+                <input class="uk-input uk-form-width-medium" type="text" (keyup)="processPass($event)">
+            </form>
+            <hr>
+            <p>if you're interested in working with us, <a class="brand-blue" routerLink="/contact">contact us</a> and
+                we'll
+                get back to you
+                shortly</p>
+        </div>
+        }
+
+        @if(showContent) {
         <div class="uk-child-width-1-1@s uk-height-match" uk-grid>
             <div>
                 <div class="uk-card uk-card-default uk-card-small uk-card-body">
@@ -52,10 +68,10 @@
                     <a href="mailto:mail@i2idigital.com" style="align-self: center;"
                         class="uk-button uk-button-default uk-button-medium brand-blue">Email us</a>
                 </div>
-
             </div>
 
         </div>
+        }
 
     </div>
 </div>

@@ -8,39 +8,44 @@
 
             <h1 class="brand-blue uk-text-center">Featured Campaigns</h1>
 
-            <ul uk-tab class="uk-flex-center">
-                @for (campaign of campaigns; track campaign.artist) {
-                <li><a href="#">{{ campaign.song }}</a></li>
-                }
-            </ul>
+            <div uk-slider>
 
-            <div class="uk-switcher uk-margin">
+                <div class="uk-position-relative">
 
-                @for (campaign of campaigns; track campaign.artist) {
-                <div class="uk-card uk-grid-collapse uk-child-width-1-1@s uk-margin" uk-grid>
+                    <div class="uk-slider-container uk-light">
 
-                    <div class="uk-cover-container">
-                        <iframe [src]="campaign.youtubeId" width="1600" height="900" allowfullscreen uk-responsive
-                            uk-video="automute: true"></iframe>
-                    </div>
+                        <div class="uk-slider-items">
+                            @for (campaign of campaigns; track campaign.song) {
+                            <div class="">
+                                <div class="">
+                                    <iframe [src]="campaign.youtubeId" width="1600" height="900" allowfullscreen
+                                        uk-responsive uk-video="automute: true; autoplay: inview"></iframe>
+                                </div>
+                                <p style="display: flex; justify-content: center;">{{ campaign.artist }} - {{
+                                    campaign.song }}</p>
+                            </div>
+                            }
+                        </div>
 
-                    <div class="campaign-content">
-                        <div class="uk-card-body">
-                            <!-- <h2 class="uk-card-title">{{ campaign.artist }}</h2> -->
-                            <!-- <h2 class="brand-blue">{{ campaign.song }}</h2> -->
-                            <!-- <span> -->
-                            <!--     <a [href]="campaign.youtubeLink" uk-icon="youtube"></a> -->
-                            <!--     <a [href]="campaign.spotifyTrack"><img class="spotify-icon" -->
-                            <!--             [src]="'assets/icons/spotify.webp'" /></a> -->
-                            <!--     <a [href]="campaign.appleLink" uk-icon="apple"></a> -->
-                            <!-- </span> -->
+                        <div class="uk-hidden@s uk-light">
+                            <a class="uk-position-center-left uk-position-small" href uk-slidenav-previous
+                                uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small" href uk-slidenav-next
+                                uk-slider-item="next"></a>
+                        </div>
+
+                        <div class="uk-visible@s">
+                            <a class="uk-position-center-left-out uk-position-small" href uk-slidenav-previous
+                                uk-slider-item="previous"></a>
+                            <a class="uk-position-center-right-out uk-position-small" href uk-slidenav-next
+                                uk-slider-item="next"></a>
                         </div>
                     </div>
-
-
                 </div>
-                }
+
+
             </div>
+
         </div>
     </div>
 </div>
