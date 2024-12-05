@@ -59,6 +59,31 @@ export class CampaignsComponent {
       song: 'landed in brooklyn',
       youtubeId: this.buildYouTubeEmbed('Hre1L9hFDvg')
     },
+    {
+      artist: 'yng martyr',
+      song: 'gleaming',
+      youtubeId: this.buildYouTubeEmbed('jraBbrB9TOs')
+    },
+    {
+      artist: 'khantrast',
+      song: 'valedictorian',
+      youtubeId: this.buildYouTubeEmbed('ZSQzldfVaxM')
+    },
+    {
+      artist: 'eric reprid',
+      song: 'suki',
+      youtubeId: this.buildYouTubeEmbed('zbpWYvUVAjU')
+    },
+    {
+      artist: 'the rose',
+      song: 'lifeline (reborn)',
+      youtubeId: this.buildYouTubeEmbed('mNhaZYB8LIU')
+    },
+    {
+      artist: 'kam prada',
+      song: 'bigger dreams',
+      youtubeId: this.buildYouTubeEmbed('orObai0Fheo')
+    },
   ]
 
   buildYouTubeEmbed(youtubeId: string) {

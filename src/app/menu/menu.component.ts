@@ -11,7 +11,6 @@ import { RouterLink } from '@angular/router';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
-
   newsSeparator = '     /     '
   newsMessages = [
     "Headband Andy - bangmychest!",

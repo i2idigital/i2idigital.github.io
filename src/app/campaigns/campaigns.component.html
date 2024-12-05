@@ -21,8 +21,14 @@
                                     <iframe [src]="campaign.youtubeId" width="1600" height="900" allowfullscreen
                                         uk-responsive uk-video="automute: true; autoplay: inview"></iframe>
                                 </div>
-                                <p style="display: flex; justify-content: center;">{{ campaign.artist }} - {{
+                                <p style="display: flex; justify-content: center; margin-bottom: 10px;">{{
+                                    campaign.artist }} - {{
                                     campaign.song }}</p>
+                                <div class="uk-text-center" style="opacity: 70%;">
+                                    <a [href]="campaign.spotifyTrack"><img class="spotify-icon"
+                                            [src]="'assets/icons/spotify.webp'" /></a>
+                                    <a [href]="campaign.appleLink" uk-icon="apple"></a>
+                                </div>
                             </div>
                             }
                         </div>
