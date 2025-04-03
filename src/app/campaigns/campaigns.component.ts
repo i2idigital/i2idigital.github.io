@@ -77,7 +77,7 @@ export class CampaignsComponent {
     {
       artist: 'the rose',
       song: 'lifeline (reborn)',
-      youtubeId: this.buildYouTubeEmbed('mNhaZYB8LIU')
+      youtubeId: this.buildYouTubeEmbed('VFfhmsAXV-8')
     },
     {
       artist: 'kam prada',
