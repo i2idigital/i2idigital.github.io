@@ -7,6 +7,10 @@
   }
 }
 
+.uk-card-body {
+  padding: 10px;
+}
+
 .uk-card-media-top img {
   height: 300px;
   width: auto;
@@ -21,7 +25,9 @@
 }
 
 .uk-card-title {
-  font-size: 1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 0.9em;
   white-space: nowrap;
 }
 
