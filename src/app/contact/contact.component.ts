@@ -10,5 +10,11 @@ import { NavBackComponent } from '../nav-back/nav-back.component';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+  btnText = "Email us";
 
+  constructor() { }
+
+  emailClick() {
+    this.btnText = "mail@i2idigital.com";
+  }
 }
