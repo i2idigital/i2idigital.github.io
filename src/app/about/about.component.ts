@@ -15,7 +15,7 @@ export class AboutComponent implements OnInit {
     [
       new CountUp('streams-stat', 500, { duration: 5, suffix: 'M+' }),
       new CountUp('fans-stat', 2, { duration: 5, suffix: 'B+', decimalPlaces: 1 }),
-      new CountUp('cpm-stat', 0.94, { duration: 5, prefix: '$', decimalPlaces: 2, startVal: 3 }),
+      new CountUp('cpm-stat', 0.52, { duration: 5, prefix: '$', decimalPlaces: 2, startVal: 3 }),
       new CountUp('follower-stat', 23, { duration: 5, suffix: 'M+' })
     ].forEach(c => c.start())
   }
