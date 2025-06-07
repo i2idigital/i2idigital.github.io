@@ -59,11 +59,14 @@
 
    .logo-image {
      display: flex;
-     min-height: 140px !important;
+     min-height: 120px !important;
+     max-height: 120px;
 
      img {
        object-fit: contain;
      }
+
+     padding: 20px;
    }
  }
 
