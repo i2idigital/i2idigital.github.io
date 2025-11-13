@@ -80,3 +80,11 @@ html {
 h1 {
   margin-bottom: 50px;
 }
+
+body,
+html {
+  overscroll-behavior: none;
+  scrollbar-width: auto;
+  scrollbar-color: $brand-blue $brand-black;
+  width: 100%;
+}
