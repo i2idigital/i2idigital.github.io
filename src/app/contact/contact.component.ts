@@ -15,6 +15,6 @@ export class ContactComponent {
   constructor() { }
 
   emailClick() {
-    this.btnText = "mail@i2idigital.com";
+    this.btnText = "i2idigitalmusic@gmail.com";
   }
 }
