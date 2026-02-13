@@ -1,5 +1,9 @@
  @import 'variables';
 
+ .text-block {
+   font-size: 85%;
+ }
+
  .uk-card-body {
    padding: 40px;
 
@@ -36,6 +40,7 @@
  .caption {
    text-align: center;
    margin-top: 0;
+   margin-bottom: 35px;
  }
 
  .flag {
